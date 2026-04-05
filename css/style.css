@@ -1,0 +1,334 @@
+/* Night by Night — Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f6f7f9;
+  --bg-card: #f6f7f9;
+  --text: #1a1a2e;
+  --text-secondary: #6b7280;
+  --text-light: #9ca3af;
+  --accent: #4f46e5;
+  --accent-light: #e0e7ff;
+  --border: #e5e7eb;
+  --border-accent: #4f46e5;
+  --nav-bg: #ffffff;
+  --font: 'Inter', -apple-system, sans-serif;
+  --max-width: 1100px;
+  --sidebar-width: 220px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+/* ---- Header ---- */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--nav-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 56px;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.logo-icon {
+  width: 32px; height: 32px;
+  background: var(--accent);
+  border-radius: 8px;
+  display: flex; align-items: center;
+  justify-content: center;
+  color: white; font-weight: 700;
+  font-size: 14px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.logo-tagline {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-left: 0.3rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.site-nav a {
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+.lang-switch {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+/* ---- Layout ---- */
+.page-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  padding-top: 0.5rem;
+}
+
+.sidebar-section { margin-bottom: 1.8rem; }
+
+.sidebar-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-light);
+  margin-bottom: 0.6rem;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.3rem 0;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: var(--accent);
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ---- Tags ---- */
+.tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.tags span::after { content: " · "; color: var(--text-light); }
+.tags span:last-child::after { content: ""; }
+
+/* ---- Typography ---- */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 560px;
+}
+
+/* ---- Stats ---- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat {
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 0.3rem;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* ---- Article Cards ---- */
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--bg-card);
+  border-left: 3px solid var(--border-accent);
+  border-radius: 0 10px 10px 0;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 0.8rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-date {
+  font-size: 12px;
+  color: var(--text-light);
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ---- Disclaimer ---- */
+.disclaimer {
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.disclaimer strong { color: var(--accent); }
+
+/* ---- Article Pages ---- */
+.article h1 { margin-bottom: 0.5rem; }
+
+.article-subtitle {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.article h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 2.5rem 0 0.8rem;
+}
+
+.article p {
+  margin-bottom: 1rem;
+  max-width: 620px;
+}
+
+.article-nav {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.article-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-light);
+  margin-top: 3rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .header-inner { padding: 0 1rem; }
+  .logo-tagline { display: none; }
+  .page-wrap {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+  .sidebar {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+  }
+  .sidebar-section { margin-bottom: 0; }
+  .stats { grid-template-columns: 1fr; }
+  h1 { font-size: 22px; }
+}

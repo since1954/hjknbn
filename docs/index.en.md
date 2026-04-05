@@ -1,27 +1,64 @@
 ---
 hide:
   - navigation
+  - toc
 ---
 
-# Night by Night
+<div class="nbn-tags">
+  <span class="nbn-tag">Sleep Apnea</span>
+  <span class="nbn-tag">Self-Management</span>
+  <span class="nbn-tag">Data Analysis</span>
+</div>
 
-**Understanding sleep apnea therapy, one night at a time.**
+# Understanding my therapy — with data, not guesswork
 
-I'm HJK — 71 years old, sleep apnea patient since 2009, software developer by passion. Since July 2024, I've been systematically recording every night: CPAP data, oxygen saturation, sleep stages, video. Over 650 nights, four self-built analysis systems, more than 3,000 commits.
+I'm HJK, 71 years old, living with CPAP therapy for over 600 nights. Here I document what I've learned along the way — for anyone who wants to take an active role in their sleep apnea treatment.
 
-This is not a tutorial portal or a medical guide. It's the lab journal of an ongoing research journey — personal, data-driven, open.
+<div class="nbn-stats" markdown>
+  <div class="nbn-stat">
+    <div class="nbn-stat-label">Documented nights</div>
+    <div class="nbn-stat-value">645+</div>
+  </div>
+  <div class="nbn-stat">
+    <div class="nbn-stat-label">Config variants tested</div>
+    <div class="nbn-stat-value">10</div>
+  </div>
+  <div class="nbn-stat">
+    <div class="nbn-stat-label">Data points per night</div>
+    <div class="nbn-stat-value">~50</div>
+  </div>
+</div>
 
-What drove me here: The realization that a single sleep lab night isn't enough to understand what's really happening. And that the numbers on the CPAP display don't tell the whole truth.
+<div class="nbn-articles" markdown>
 
-!!! warning "Disclaimer"
-    Everything on this site describes my personal experience. I am not a doctor. Always discuss therapy changes with your treating physician.
+## Latest entries
 
-## Where to start?
+<a class="nbn-card" href="reise/der-geraetewechsel/">
+  <div class="nbn-card-header">
+    <span class="nbn-card-title">The device switch: AHI drops by factor 8</span>
+    <span class="nbn-card-date">Jan 2025</span>
+  </div>
+  <p class="nbn-card-desc">A new CPAP machine, a dramatically better AHI — and an independent sleep study showing the truth lies elsewhere.</p>
+</a>
 
-**[My Journey](reise/index.md)** — How a passive patient became an active data analyst. Chronological, personal.
+<a class="nbn-card" href="erkenntnisse/spo2-die-metrik-die-das-geraet-nicht-sieht/">
+  <div class="nbn-card-header">
+    <span class="nbn-card-title">O₂ Ring: What the finger tells at night</span>
+    <span class="nbn-card-date">Jan 2026</span>
+  </div>
+  <p class="nbn-card-desc">How a €100 sensor fundamentally changed my understanding of therapy.</p>
+</a>
 
-**[Insights](erkenntnisse/index.md)** — What I've learned from the data. Thematic, timeless.
+<a class="nbn-card" href="erkenntnisse/was-ahi-wirklich-bedeutet/">
+  <div class="nbn-card-header">
+    <span class="nbn-card-title">What AHI really means</span>
+    <span class="nbn-card-date">Dec 2025</span>
+  </div>
+  <p class="nbn-card-desc">Sleep medicine's most important number says less than most people think.</p>
+</a>
 
-**[Tools](werkzeuge/index.md)** — Hardware, software, setup. Practical.
+</div>
 
-**[About](projekt/index.md)** — Why Night by Night exists and who's behind it.
+<div class="nbn-disclaimer">
+  <strong>Disclaimer:</strong> This site documents personal experiences with sleep apnea therapy. It does not replace medical advice. Always discuss therapy changes with your treating physician.
+</div>

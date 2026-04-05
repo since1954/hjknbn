@@ -1,0 +1,123 @@
+/* Night by Night — Custom Styles */
+
+/* Stats Cards */
+.nbn-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.nbn-stat {
+  background: var(--md-code-bg-color);
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: left;
+}
+
+.nbn-stat-label {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.3rem;
+}
+
+.nbn-stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+/* Article Cards */
+.nbn-articles {
+  margin: 2rem 0;
+}
+
+.nbn-articles h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.nbn-card {
+  border-left: 3px solid var(--md-accent-fg-color);
+  background: var(--md-code-bg-color);
+  border-radius: 0 8px 8px 0;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  transition: border-color 0.2s;
+}
+
+.nbn-card:hover {
+  border-left-color: var(--md-primary-fg-color);
+}
+
+.nbn-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+}
+
+.nbn-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+}
+
+.nbn-card-date {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.nbn-card-desc {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+}
+
+/* Tags */
+.nbn-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.nbn-tag {
+  font-size: 0.75rem;
+  color: var(--md-accent-fg-color);
+}
+
+.nbn-tag::after {
+  content: " ·";
+  color: var(--md-default-fg-color--lighter);
+}
+
+.nbn-tag:last-child::after {
+  content: "";
+}
+
+/* Disclaimer */
+.nbn-disclaimer {
+  background: var(--md-code-bg-color);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.nbn-disclaimer strong {
+  color: var(--md-accent-fg-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nbn-stats {
+    grid-template-columns: 1fr;
+  }
+}

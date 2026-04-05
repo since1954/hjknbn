@@ -49,10 +49,13 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/hjk-night-by-night
+      link: https://github.com/since1954
   comments:
     enabled: true
     provider: giscus
+
+extra_css:
+  - assets/css/custom.css
 
 markdown_extensions:
   - admonition

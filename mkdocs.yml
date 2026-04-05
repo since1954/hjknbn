@@ -1,0 +1,82 @@
+site_name: Night by Night
+site_url: https://night-by-night.com
+site_description: "Schlafapnoe-Therapie verstehen, Nacht für Nacht"
+site_author: HJK
+
+repo_url: https://github.com/since1954/hjknbn
+repo_name: hjknbn
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Licht an
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Licht aus
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+  icon:
+    logo: material/weather-night
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+plugins:
+  - search
+  - i18n:
+      default_language: de
+      languages:
+        de:
+          name: Deutsch
+          build: true
+        en:
+          name: English
+          build: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hjk-night-by-night
+  comments:
+    enabled: true
+    provider: giscus
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Start: index.md
+  - Meine Reise:
+    - reise/index.md
+    - reise/wie-alles-begann.md
+    - reise/die-erste-nacht-mit-daten.md
+    - reise/der-geraetewechsel.md
+  - Erkenntnisse:
+    - erkenntnisse/index.md
+    - erkenntnisse/was-ahi-wirklich-bedeutet.md
+    - erkenntnisse/spo2-die-metrik-die-das-geraet-nicht-sieht.md
+  - Werkzeuge:
+    - werkzeuge/index.md
+    - werkzeuge/mein-setup.md
+  - Über das Projekt:
+    - projekt/index.md
+    - projekt/ueber-hjk.md

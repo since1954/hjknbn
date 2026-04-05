@@ -36,12 +36,13 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: de
+      docs_structure: suffix
       languages:
-        de:
+        - locale: de
           name: Deutsch
+          default: true
           build: true
-        en:
+        - locale: en
           name: English
           build: true
 
